@@ -16,6 +16,7 @@
 		0E47A0B7256CB78C007C61E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E47A0B5256CB78C007C61E9 /* LaunchScreen.storyboard */; };
 		0E47A0C2256CB78C007C61E9 /* IOS_Base_Project_MVVM_Coordinator_RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47A0C1256CB78C007C61E9 /* IOS_Base_Project_MVVM_Coordinator_RxSwiftTests.swift */; };
 		0E47A0CD256CB78C007C61E9 /* IOS_Base_Project_MVVM_Coordinator_RxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47A0CC256CB78C007C61E9 /* IOS_Base_Project_MVVM_Coordinator_RxSwiftUITests.swift */; };
+		0E798F2B256CDC35004E125C /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E798F2A256CDC35004E125C /* LoginVM.swift */; };
 		0ED976D2256CBA6500609EE9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED976D1256CBA6500609EE9 /* Alert.swift */; };
 		0ED976DB256CBA8500609EE9 /* SVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED976DA256CBA8500609EE9 /* SVProgressHUD.swift */; };
 		0ED976E4256CBAC600609EE9 /* HeroStatusApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED976E3256CBAC600609EE9 /* HeroStatusApi.swift */; };
@@ -124,6 +125,7 @@
 		0E47A0C8256CB78C007C61E9 /* IOS Base Project MVVM Coordinator RxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS Base Project MVVM Coordinator RxSwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E47A0CC256CB78C007C61E9 /* IOS_Base_Project_MVVM_Coordinator_RxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Base_Project_MVVM_Coordinator_RxSwiftUITests.swift; sourceTree = "<group>"; };
 		0E47A0CE256CB78C007C61E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E798F2A256CDC35004E125C /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		0ED976D1256CBA6500609EE9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0ED976DA256CBA8500609EE9 /* SVProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUD.swift; sourceTree = "<group>"; };
 		0ED976E3256CBAC600609EE9 /* HeroStatusApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStatusApi.swift; sourceTree = "<group>"; };
@@ -292,6 +294,22 @@
 				0E47A0CE256CB78C007C61E9 /* Info.plist */,
 			);
 			path = "IOS Base Project MVVM Coordinator RxSwiftUITests";
+			sourceTree = "<group>";
+		};
+		0E5A91CB256CDA1000240D53 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				0ED9782F256CC15A00609EE9 /* Hero */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
+		0E798F1E256CDC1C004E125C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E798F2A256CDC35004E125C /* LoginVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0ED976CE256CBA4000609EE9 /* Helpers */ = {
@@ -553,6 +571,8 @@
 		0ED977FE256CC05100609EE9 /* HeroFlow */ = {
 			isa = PBXGroup;
 			children = (
+				0ED97854256CC24D00609EE9 /* Cell */,
+				0E5A91CB256CDA1000240D53 /* Hero */,
 				0ED97815256CC0B300609EE9 /* HeroDetail */,
 				0ED9780C256CC09800609EE9 /* Model */,
 				0ED977FF256CC06D00609EE9 /* HeroCoordinator.swift */,
@@ -572,8 +592,6 @@
 		0ED97815256CC0B300609EE9 /* HeroDetail */ = {
 			isa = PBXGroup;
 			children = (
-				0ED97854256CC24D00609EE9 /* Cell */,
-				0ED9782F256CC15A00609EE9 /* Hero */,
 				0ED97827256CC11F00609EE9 /* Screen */,
 				0ED9781E256CC10000609EE9 /* ViewModel */,
 				0ED97816256CC0F200609EE9 /* DetailHeroView.swift */,
@@ -703,6 +721,7 @@
 		0ED978AE256CC3CB00609EE9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0E798F1E256CDC1C004E125C /* ViewModel */,
 				0ED978B7256CC3E200609EE9 /* Screen */,
 				0ED978AF256CC3D800609EE9 /* LoginView.swift */,
 			);
@@ -1040,6 +1059,7 @@
 				0ED97820256CC10E00609EE9 /* HeroDetailVM.swift in Sources */,
 				0ED978A9256CC3B400609EE9 /* SignUpVC.swift in Sources */,
 				0ED978C3256CC41400609EE9 /* AuthCoordinatorOutput.swift in Sources */,
+				0E798F2B256CDC35004E125C /* LoginVM.swift in Sources */,
 				0ED97776256CBD9B00609EE9 /* CoordinatorFactory.swift in Sources */,
 				0ED977C0256CBEF400609EE9 /* Presentable.swift in Sources */,
 				0ED9777B256CBDAA00609EE9 /* CoordinatorFactoryImp.swift in Sources */,

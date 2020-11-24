@@ -17,7 +17,7 @@ final class CoordinatorFactoryImp: CoordinatorFactory {
     
     
     func makeAuthCoordinatorBox(router: Router) -> AuthCoordinatorOutput & Coordinator {
-        let coordinator = AuthCoordinator(router: router, factory: ModuleFactoryImp())
+        let coordinator = AuthCoordinator(router: router, factory: ModuleFactoryImp(), viewModel: ViewModelFactoryImp())
         return coordinator
     }
     

@@ -8,4 +8,5 @@
 import Foundation
 
 protocol LoginView: BaseView {
+    var viewModel: LoginVM! { get set }
 }

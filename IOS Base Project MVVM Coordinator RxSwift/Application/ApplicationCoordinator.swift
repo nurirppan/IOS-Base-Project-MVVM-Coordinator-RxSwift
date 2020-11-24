@@ -22,9 +22,9 @@ fileprivate enum LauncInstructor {
         case (true, true):
             return .main
         case (false, true):
-            return .main
+            return .auth
         case (true, false):
-            return .main
+            return .auth
         }
     }
 }

@@ -13,12 +13,13 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
     
     private let factory: ModuleFactory
     private let router: Router
-    private weak var signUpView: SignUpView?
+    private let viewModel: ViewModelFactoryImp
     
     
-    init(router: Router, factory: ModuleFactory) {
+    init(router: Router, factory: ModuleFactory, viewModel: ViewModelFactoryImp) {
         self.factory = factory
         self.router = router
+        self.viewModel = viewModel
     }
     
     override func start() {
@@ -27,7 +28,8 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
     
     private func showLoogin() {
         let view = factory.makeLoginOutput()
-        router.setRootModule(view)
+        view.viewModel = self.viewModel.makeLoginVM()
+        router.setRootModule(view, hideBar: true)
     }
     
     

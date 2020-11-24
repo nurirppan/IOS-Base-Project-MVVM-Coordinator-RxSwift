@@ -10,4 +10,5 @@ import Foundation
 protocol ViewModelFactory {
     func makeHeroVM() -> HeroVM
     func makeHeroDetailVM() -> HeroDetailVM
+    func makeLoginVM() -> LoginVM
 }

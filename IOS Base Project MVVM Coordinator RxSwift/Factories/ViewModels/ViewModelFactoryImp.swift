@@ -16,4 +16,8 @@ final class ViewModelFactoryImp: ViewModelFactory {
     func makeHeroDetailVM() -> HeroDetailVM {
         return HeroDetailVM()
     }
+    
+    func makeLoginVM() -> LoginVM {
+        return LoginVM()
+    }
 }
